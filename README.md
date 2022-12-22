@@ -9,7 +9,7 @@ Projeto suporte para aprendizado do framework Next.js
 ## Para executar o projeto:
 necessário:
 ``
-    java JDK
+    java JDK e Docker
 ``
 
 Para executar os projeto compile o projeto via maven:
