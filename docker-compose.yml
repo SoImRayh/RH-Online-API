@@ -1,0 +1,22 @@
+version: '3.7'
+
+services:
+  db:
+    env_file:
+      - .env
+    container_name: db
+    image: postgres
+    restart: always
+    volumes:
+      - postgrevolume:/var/lib/postgresql/data
+    environment:
+      POSTGRES_PASSWORD: $SQLPASSWORD
+      POSTGRES_USER: $SQLUSER
+      POSTGRES_DBE: $SQLDATABASE
+    ports:
+      - '5432:5432'
+
+
+volumes:
+  postgrevolume:
+    external: true
