@@ -13,3 +13,8 @@ spring:
       enabled: true
     livereload:
       enabled: true
+
+rayh:
+  dev:
+    jwtSecret: mysecret
+    jwtExpirationMs: 100000
